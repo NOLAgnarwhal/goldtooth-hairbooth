@@ -12,17 +12,19 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- Font Awesome link -->
+		<script src="https://kit.fontawesome.com/1978c5b70f.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="header">
 			<h1 class="logo"><a href="#">GoldTooth HairBooth</a></h1>
 			<nav>
 				<ul class="main-nav">
+					<li><a href="#" class="fab fa-instagram"></a></li>
 					<li><a href='#'>Cuts</a></li>
 					<li><a href='#'>Colors</a></li>
 					<li><a href='#'>Styles</a></li>
 					<li><a href='#'>Book an Appointment</a></li>
-					<li><a href='#'>IG</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -43,10 +45,35 @@
 				</a>
 			</section>
 		</main>
-		<section>
-			<h2>Book an Appointment</h2>
+		<section class="booking-wrapper">
+			<a href="#">
+				<h2 class="booking">Book an Appointment</h2>
+			</a>
 		</section>
-		<footer></footer>
+		<footer>
+			<section class ="footer-hairsmith">
+				<span>Proudly represented by</span>
+				<img src="/img/HairSmithLogo.png" alt="HairSmith & Co. Logo">
+				<a href="#">
+					<span>1144 E Market Street, Unit 4</span>
+					<span>Charlottesville, VA 22902</span>
+				</a>
+				<a href="#">www.hairsmithandco.com</a>
+			</section>
+			<section class="footer-insta">
+				<span>For current specials and the latest content</span>
+				<span>click here to follow me on Instagram:</span>
+				<a href="#" class="fab fa-instagram"></a>
+			</section>
+			<section class="footer-email">
+				<span>Email me here for booking inquiries</span>
+				<form action="" method="post">
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button type="submit">Send</button>
+				</form>
+			</section>
+		</footer>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

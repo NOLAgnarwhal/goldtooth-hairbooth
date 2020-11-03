@@ -32,8 +32,6 @@ body {
      line-height: 1.6;
      margin: 0;
      min-height: 100vh;
-    
-
 }
 
 h1, h2 {
@@ -59,10 +57,10 @@ a {
 
 .logo {
      margin: 0;
-     font-size: 2.5em;
+     font-size: 3.5em;
      font-family: 'Molle', cursive; 
      font-weight: normal;
-     padding: 10px 15px;
+     padding: 10px 10px;
      text-align: center;
      display: block;
      color: #FEB72B;
@@ -71,8 +69,6 @@ a {
 .main-nav {
      margin-top: 5px;
      font-family: 'Lato', sans-serif;
-     
-
 }
 
 .main-nav a {
@@ -101,16 +97,19 @@ a {
 	border-radius: 2px;
 }
 
+.main-nav .fab {
+     font-size: 2em;
+}
+
 .gallery {
-     display: flex;
-     
+     display: flex; 
 }
 
 .gallery-preview {
      flex: 33.33%;
      padding: 5px;
      width: 33.33%;
-     height: 400px;
+     height: 600px; /*change height?*/     
      border: 1px solid #FEB72B;
 }
 
@@ -124,7 +123,7 @@ a {
 }
 
 .colors {
-     background-image: url("/img/gthb129.jpg");
+     background-image: url("/img/gthb57.jpg");
      background-color: #10375C;
      background-position: center;
      background-repeat: no-repeat;
@@ -144,21 +143,91 @@ a {
 .gallery-preview h2 {
      text-align: center;
      position: absolute;
-     top: 90%;
+     top: 88%;
      left: 50%;
      transform: translate(-50%, -50%);
-     font-size: 1.5em;
+     font-size: 1.75em;
      padding: 10px;
      margin: 10px;
      width: 50%;
      background-color: #10375C;
      border: 2px solid #FEB72B;
-     opacity: .7
+     opacity: .8
 }
 
 .gallery-preview h2:hover {
      opacity: 1;
 }
+
+.booking-wrapper {
+     text-align: center;
+}
+
+.booking {
+     border: 2px solid #FEB72B;
+     font-size: 2.5em;
+     display: inline-block;
+     padding: 1%;
+     margin: 1%;
+}
+
+footer {
+     /* border-top: 2px solid #FEB72B; */
+     padding: 1%;
+     display: flex;
+     font-family: 'Lato', sans-serif;   
+}
+
+footer section {
+     flex: 33.33%;
+     padding: 1%;
+     border-bottom: 2px solid #FEB72B; 
+}
+
+.footer-hairsmith span, img, a {
+     display: block;
+     text-align: center;
+}
+
+.footer-hairsmith img {
+     height: auto;
+     width: auto;
+     max-height: 100px;
+     max-width: 200px;
+     margin-left: auto;
+     margin-right: auto; 
+}
+
+.footer-insta span, a{
+     display: block;
+     text-align: center;
+}
+
+.footer-insta .fab{
+     font-size: 60px;
+     text-decoration: none;
+     height: auto;
+     width: auto;
+     max-height: 100px;
+     max-width: 100px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5%;
+     display: block;
+     text-align: center;
+}
+
+.footer-email {
+     text-align: center; 
+}
+
+.footer-email * {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 1%;
+}
+
 
 
 /******************************************
@@ -169,10 +238,6 @@ a {
 /* ================================= 
   Media Queries
 ==================================== */
-
-
-
-
 @media screen and (min-width: 769px) {
 	.header,
      .main-nav
@@ -193,11 +258,11 @@ a {
 }
 
 @media screen and (max-width: 769px){
-     .gallery{
+     .gallery, footer{
        display: block;
      
      }
-     .gallery-preview {
+     .gallery-preview, footer>section {
        width: 100%;
      }
    }
