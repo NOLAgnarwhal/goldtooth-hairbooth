@@ -1,6 +1,5 @@
 - [] Have Google fonts show up on Chrome/Safari browser
-- [] Footer
-    - [] Small sitemap links
-    - [] Hairsmith & Co. Shoutout
-    - [] Instagram
-    - [] Contact form
+- [x] Footer    
+    - [x] Hairsmith & Co. Shoutout
+    - [x] Instagram
+    - [x] Contact form
